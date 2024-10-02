@@ -1,13 +1,10 @@
 package com.jdbc.crudoperations;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
 public class UpdateMultipleRowsDemo {
-
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		String driver = "com.mysql.cj.jdbc.Driver";
 		String jdbc_url = "jdbc:mysql://localhost:3306/demo";
@@ -24,9 +21,7 @@ public class UpdateMultipleRowsDemo {
 		String sqlQuery = String.format("update employees set esal=esal+%f where esal<%f",bonus,salRange);
 		int updateCount = st.executeUpdate(sqlQuery);
 		System.out.println("The number of rows updated:"+updateCount);
-		con.close();
-		
-		
+		con.close();	
 	}
 
 }

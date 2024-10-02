@@ -1,12 +1,10 @@
 package com.jdbc.crudoperations;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
 public class SelectRangeOfRecordsDemo1 {
           public static void main(String[] args)throws ClassNotFoundException, SQLException {
 			    Class.forName("com.mysql.cj.jdbc.Driver");
@@ -17,7 +15,6 @@ public class SelectRangeOfRecordsDemo1 {
 			    	  System.out.println(rs.getInt("eno")+"\t"+rs.getString("ename")+"\t"+rs.getInt("esal")+"\t"+rs.getString("eaddr"));
 		}
 			    con.close();
-       
 	}
 
 }

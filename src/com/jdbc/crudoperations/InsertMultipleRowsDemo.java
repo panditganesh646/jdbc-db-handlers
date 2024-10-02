@@ -1,13 +1,10 @@
 package com.jdbc.crudoperations;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
 public class InsertMultipleRowsDemo {
-
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		 String driver ="com.mysql.cj.jdbc.Driver";
 		 String jdbc_url = "jdbc:mysql://localhost:3306/demo";
@@ -36,10 +33,6 @@ public class InsertMultipleRowsDemo {
 			    }    
 		 }
 		 con.close();
-		 
-		 
-				 
-
 	}
 
 }
